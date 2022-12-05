@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    color: initial;
+    margin-left: 20px;
+    
+}
+
+/* Seletor shield selector (seletor de filho) '>'  tem que ser um filho direto desse  elemento queestá dentro do  elemento anterior */
+.pai >.filha{
+    color: red;
+}
+
+/* Selecionando apenas a filha da filha (selecionando um pai que tem DIRETAMENTE uma filha que tem DIRETAMENTE uma filha)
+Se houver uma tag no meio por exemplo uma SPAN já não funciona pois deixa de ser filha direta */
+
+.pai >.filha >.filha{
+    color: blue;
+}
+
+/* Se tivesse um span no meio ficaria: */
+.pai >.filha > span >.filha{
+    color: aquamarine;
+}
+
+/* Selecionando todas as classes 2 que estão dentro da classe um utilizando o general simpol selector ' ~ ' */
+.pai .um~.dois{
+    color: rgb(0, 183, 255);
+}
+
+/* Selecionando apenas a primeira classe dois que vem após o um é utilizando o adjacentes simpol '+' , se essa linha for apagada essa regra some e permace apenas a anterior onde todos os 2 serão selecionados (oriento a primeiro excluir essa linha para entender a linha anterior) */
+.pai .um+.dois{
+    color: red;
+}
+
+
+/* Selecionando um atributo padrão, no caderno o passo a passo para criação de um  atributo, para selecionar um atributo basta colocálo entre '[ ]' */
+
+[checked]{
+    width: 50px;
+    height: 50px;
+}
+[meu-atributo^="qualquer"]{
+    color: aqua;
+}
+
+/* Chamando uma pseudo classe do cursor */
+
+.heading:hover{
+    background: black;
+}
+
+/* Mudando o tempo de transição de 'all' (para toda mudança que ocorrer no elemento heading) 'ms' mile segundos*/
+
+.heading{
+    transition: all 300ms ease-in-out;
+}
+
+/* -Modificando a propriedade de links nunca visitados: utilizando a pseudo classe link- Primeiro exemplo para cor de todos os links*/
+
+a{
+    color: chocolate;
+}
+
+/* Pseudo classe ':' para links nunca visitados */
+
+a:link{
+    color: turquoise;
+}
+
+/* Pseudo classe para links já visitados */
+
+a:visited{
+    color: chartreuse;
+}
+
+/* Pseudo classe para quando por exemplo um link estiver clicado 'active' */
+a:active{
+    background: darkslategrey;
+    color: azure;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+/* O input quando está selecionado possui uma pseudo classe que é o foco, para modificarmos sua pseudo classe usamos o 'focus' Abaixo vemos um exemplo de modificar a sompra do box*/
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/* Mudando o input para cheked o parente seguido '+' muda */
+
+input:checked + p{
+    background: red;
+}
+
+/* Utilizando a pseudo classe para selecionar um item expecífico, nesse caso a última unidade "ultima filha da tag principal" poderia ser first-child */
+
+.pai .lista li:last-child{
+    background: red;
+}
+
+/* ------ Está no outro arquivo html 'pseudo classes' ---------*/
+
+
+/* Utilizando a pseudo classe de negação, todas as tags h3 serão azuis EXCETO () <- 'inserir a regra entre parenteses' > a que tiver a classe meio < */
+
+h3:not(.meio){
+    color: blue;
+}
+
+/* Trabalhando com input's */
+
+input:checked + p{
+    background-color: red;
+}
+
+/* Quando o input não estiver checado e tiver um p logo após ele a regra será aplicada */
+
+input:not(:checked) + p{
+    background: yellow;
+}
+
+/* Utilizando o input de :nth-child() nos conseguimos selecionar dentro de uma tag  pai um critério mais elaborado de filhos (precisam ser tags irmãs). (excluir um por um para visualizar melhor)
+- exemplo 1 - seleciona apenas um item da ordem da lista
+- exemplo 2 - seleciona apenas os paren 'even' e poderia ser os ímpares 'odd'
+- exemplo 3 - selecionando os elementos em contagem de 5 em 5 
+- exemplo 4 - começando do 5 elemento, conta de 3 em 3
+
+Existem mais formas de utilização, para visualizá-las acessar a documentação da tag*/
+
+ul li:nth-child(3){
+    background: red;
+}
+
+ul li:nth-child(even){
+    background-color:aqua ;
+}
+
+ul li:nth-child(5n){
+    background-color:rgb(129, 129, 129) ;
+}
+
+ul li:nth-child(3n+5){
+    color: yellow;
+}
+
+
+

@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid - Continuação</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: 40px;
+                font-family: sans-serif;
+            }
+
+            /* Nomeando cada sub elemento das colunas com [] dentro do grid-tamplate-columns (posteriormente podemos utilizar diretamento os nomes) - ! não é recomendado dar nomes pois torna mais complexo ! */
+            .grid {
+                display: grid;
+                grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four];
+                grid-gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .grid div {
+                background-color: aqua;
+                min-height: 100px;
+            }
+
+            /* Utilizando os nomes inseridos anteriormente no elemento pai */
+            .grid div:nth-child(5) {
+                background-color: brown;
+                /* grid-column-start: one;
+                grid-column-end: four; 
+                Otimizando esse comando, temos um atalho:
+                grid-column: 'começa em' / 'termina em' */
+                /* grid-column: one / four;
+                - Inserindo um atalho que pega tudo, tanto as columns quanto as rows start e end:
+                grid-area = linha que inicia / coluna inicia / linha que termina /coluna que termina*/
+                grid-area: 1 / 1 / 4 / 4 ;
+
+            }
+        </style>
+    </head>
+
+<body>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+
+</body>
+
+</html>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,517 @@
+:root{
+    --primary-color: #0a1128;
+    --white-color: white;
+    --gap: 3rem;
+    --light-gray-color: #EEEEEE;
+    --secundary-color: crimson;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-bg{
+    background-image: url(../img/main-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.main-white{
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--white-color);
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a{
+    color: inherit;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+/* Adicionando um efetio no menu de underline interativa : A position do item pai no caso o anterior, deve ser position relative. */
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--secundary-color);
+    transition: all 300ms ease-in-out;
+}
+
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+/* Espaçamento do menu para o conteudo */
+
+.menu-spacing{
+    height: 6.5rem;
+}
+
+
+/* Alinhando o texto da intro com grid:
+grid tamplate faz com que o texto quebre, e fique 1fr para cada; no caso alterando para 1.5 significa que a segunda grade da grid será proporcionalmente um pouco maior;
+position e top com distancia negativa, para desconsiderar nossa div vazia inserida apenas para afastar os elementos da pagina do texto.
+ */
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+    /* top: -7rem; */
+
+}
+
+/* Alinhando os itens no centro, só é possível se definir o altura da grid para 100  do vh no elemento pai. */
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* Margin bottom para afastar o texto debaixo;
+mexendo especificamente no espaçamento que colocamos no geral, apenas no titulo com line-he */
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+
+}
+
+/* Caso tenha problemas com a SVG essa aula ensina a consertar certos problemas no time 24:22 */
+
+.intro-img img,
+.intro-img svg{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Configurando o p para ter o espaçamento entre parágrafos */
+
+p {
+    margin-bottom: 3rem;
+}
+
+/* Configurando a página 2, colocando a propriedade de nowrap para a coluna não se quebrar e não haver problemas para visualizar o texto em mobile */
+
+.top3-content{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    max-width: 64rem;
+}
+
+.top3-content h2{
+    margin-bottom: 5rem;
+}
+
+/* Estilizando pagina 3 com grid */
+
+.grid-one-content{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    min-height: 100vh;
+}
+
+/* Criando um contador com counter reset, para usar como 1 2 3 de cada texto */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+/* Colocando o h3 como position relative para ele servir de container para o contador que vamos criar no before, se não exister esse container, o contador vai para o topo da página */
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+/* Usando o contador que foi criado anteriormente, esse contador pode ser criado em qualquer momento da página, posicionando ele antes do h3 */
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg) ;
+}
+
+.grid-main-heading h2{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 9rem;
+}
+
+.gallery-text{
+    color: var(--primary-color);
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height:36rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+/* Transformando a imagem quando passar o mouse por cima:
+translate (x(primeiro é a mudança de esqueda e direita), y(segundo é de cima para baixo));
+scale: para diminuir ou aumentar;
+rotate: rotaciona em degraus;
+
+ */
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+    }
+
+    /* Borda enconstar na outra com collapse */
+    table{
+        width: 100%;
+        min-width: 500px;
+        border-collapse: collapse;
+    }
+
+    /* Usando o white-space para não deixar o texto quebrar na tabela */
+    table td, table th{
+        white-space: nowrap;
+        padding: 1rem;
+        border: 0.1rem solid var(--light-gray-color);
+        text-align: left;
+    }
+
+    tfoot td{
+        background-color: var(--light-gray-color);
+    }
+
+    thead th{
+        background-color: var(--light-gray-color);
+    }
+
+    table caption{
+        font-style: italic;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .responsive-table{
+        overflow-x: auto;
+    }
+
+    /* Estilizando a página de contato
+    Grid colum span 2 para espandir a grid e pegar duas colunas */
+    .contact-form{
+        grid-column: span 2;
+    }
+
+    .contact-form .form-grid{
+        border: none;
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--gap);
+    }
+
+    .form-group{
+        flex: 1 1 320px;
+    }
+
+    /* Fazendo o label se comportar como bloco, quebrando a linha e fazendo os input irem para baixo */
+    .form-group label{
+        display: block;
+        margin-bottom: 1rem ;
+    }
+
+    .form-grid legend{
+        font-style: italic;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Mexendo no outline para modificar o efeito do active dos inputs */
+    .form-group input, .form-group textarea {
+        border: none;
+        background-color: var(--white-color);
+        padding: 1.5rem 2rem;
+        width: 100%;
+        font-size: 3rem;
+        outline: none;
+    }
+
+    /* Colocando a caixa de msg em uma linha só para ela */
+    .full-width{
+        width: 100%;
+        flex: 100%;
+    }
+
+    .form-group button{
+        border: 2px solid var(--white-color);
+        color: var(--white-color);
+        background: none;
+        padding: 1.5rem 2rem;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+
+    .form-group button:hover{
+        background-color: var(--white-color);
+        color: var(--primary-color);
+    }
+
+   .form-group ::placeholder{
+    color: var(--light-gray-color);
+   }
+
+   /* Mexendo no efeito da caixa do inputs */
+   .form-group input:focus,
+   .form-group textarea:focus{
+    box-shadow: 0.2rem 0.2rem 1rem 0.2rem var(--secundary-color);
+   }
+
+   .footer{
+    text-align: center;
+    font-size: 1.6rem;
+   }
+
+   .footer a{
+    color: #444;
+   }
+
+   .footer span{
+    color: var(--secundary-color);
+   }
+
+   .footer p {
+    padding: 3rem;
+    margin: 0;
+   }
+
+
+/* Colocando um back to top */
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+    font-size: 2.5rem;
+}
+
+
+
+   /* Sumindo com a caixa do checkbox */
+   .close-menu{
+    display: none;
+   }
+
+   /* Media queuris */
+
+   @media (max-width:800px){
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustando a img, as instruções abaixo só vão funcionar corretamente se modificarmos a img para width de 100% pois se não o fizermos a img vai ficar maior que o conteudo.
+
+    Caso dê erro das img subirem para as outras telas a solucição seria modificar o display para block do grid onde content*/
+   .gallery-img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+   .gallery-img img{
+    width: 100%;
+   }
+}
+
+/* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
+@media (max-width:800px){
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    /* Para o menu não ficar aparecendo */
+    .menu{
+        display: none;
+    }
+
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* Lógica para quando o checkbox estiver marcado o menu aparecer e desmarcado escondido:
+
+    Quando a classe close-menu estiver marcada eu quero que o menu (general simpol) faça: */
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    /* Mudando o símbolo do menu */
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+
+    /* Tirando o spacing do menu */
+    .menu-spacing{
+        display: none;
+    }
+}

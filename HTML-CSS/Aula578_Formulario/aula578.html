@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbie</title>
+    <style>
+        body {
+            font-family: serif;
+        }
+
+        label {
+            /* O label é clicavel, selecionando ele vai direto para o respectivo input */
+            cursor: pointer;
+
+            /* Fazendo o laber quebrar a linha o tornando um bloco */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Exemplo 1 -->
+    <section>
+
+        <!-- Introduzindo a tag para formularios (é uma tag de bloco onde irá receber outros elementos dentro dela) OBS:Não se pode colocar um formulario dentro do outro
+    Dentro do form, precisamos colocar uma:
+    'action' que informa para onde aquela informação irá (backend);
+    'method'os campos dentro do formulario serao atrelados a url;
+    'autocomplete' off para nao completar o formulario com texto ja inserido anteriormente na pagina-->
+        <form action="#" method="get" target="_blank" autocomplete="off">
+
+            <h1>Cabeçalho</h1>
+            <p>O Formulario</p>
+
+            <!-- Agrupar os campos de um formulário (ex. formulario com dados de pagamento, endereço) -->
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <!-- Fim Exemplo 1 -->
+
+    <!-- Exemplo 2 Input -->
+
+    <form>
+        <p>O meu Formulário</p>
+
+        <!-- Introduzindo 'Input' (onde é inserido a informação pelo usuário):
+        'type' é o tipo de input;
+        'id' é importante ter a id;
+        'name' é o nome da informação que vai para o backend;
+    'placeholder' é onde colocamos uma instrução ao usuário do que deve ser inserido no campo 
+    'disable' inserir quando não queremos que o usuário  consiga interagir com o input
+    'readonly' inserimos quando queremos que o usuário interaja com o input porém não pode alterar os dados -->
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+        <!-- Inserindo botão -->
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+    </form>
+
+    <!-- Fim Excemplo 2 -->
+
+    <form>
+        <p>Nome:
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+
+        <!-- Usando label (rotulo do input) -->
+
+        <p>
+            <!-- Colocando o label para corresponder a certo 'id' -->
+            <label for="nome1">Nome:</label>
+            <input type="text" id="nome1" name="nome" placeholder="Seu nome">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+
+        <!-- Mudando o input para caixa de marcar -->
+
+        <p>
+            <label for="dev">Sou um DEV</label>
+            <input type="checkbox" id="dev" name="dev" name="dev" value="sim">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+
+        <!-- Input com obrigatoriedade de preenchimento required -->
+        <p>
+            <label for="nome1">Nome:</label>
+            <input type="text" id="nome1" name="nome" placeholder="Seu nome" required>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+
+        <!-- Tag irmã do chekbox, onde só se pode selecionar uma opção -->
+        <p>Gênero:<br><br>
+            <label for="fem">Feminino:</label>
+            <input type="radio" id="fem" name="genero" value="feminino" checked>
+            <label for="mac">Masculino:</label>
+            <input type="radio" id="mac" name="genero" value="mascculino">
+            <label for="lgbt">LGBT:</label>
+            <input type="radio" id="lgbt" name="genero" value="lgbt">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+        <!-- Fim -->
+
+        <!-- Inseriondo um input de DATA -->
+        <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" value="2020-04-20">
+        </p>
+
+        <!-- Mudando a tag para data e hora continuando com o exemplo de value, é preciso inserir no value o  T após  a data significando Tipe e  o formato correto -->
+        <p>
+            <label for="datetime-local">Data:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" value="2020-04-20T20:00">
+        </p>
+
+        <!-- Time -->
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="00:00:01">
+        </p>
+        <!-- Fim -->
+
+
+        <!-- Cor, sempre abrir no navegador de  busca: Colors HTML e se basear no W3School-->
+        <p>
+            <label for="time">Cor Preferida:</label>
+            <input type="color" id="color" name="color" value="#ffb3e6">
+        </p>
+
+        <!-- Fim -->
+
+        <!-- Email -->
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ex: email@gmail.com ">
+        </p>
+        <!-- Fim -->
+
+        <!-- Arquivos, no caso de imagem nos mudamos o 'accept' para aceitar apenas certos  arquivos, o image/* inclui todos os arquivos que sao considerados imagem (tem o mini type de image) -->
+
+        <p>
+            <label for="foto">Sua foto</label>
+            <input type="file" id="foto" name="foto" accept=".png, .svg, image/*" multiple>
+        </p>
+
+
+        <!-- Número com numero inicial e final e um step que é quantos números pular -->
+
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um Numero" min="10" max="50" step="5">
+        </p>
+
+
+        <!-- Senha -->
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <!-- Range -->
+
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range"
+            min="0" max="10" step="2">
+        </p>
+
+        <!-- URL -->
+        <p>
+            <label for="url">Sua  URL:</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+        
+        <!-- Tipo busca -->
+        <p>
+            <label for="search">Sua  URL:</label>
+            <input type="search" id="search" name="search" placeholder="search">
+        </p>
+
+
+        <!-- Selecionar opeções, lembrando que o valor enviado para o backend é o 'value' -->
+
+        <p>
+            <label for="select">Selecione Alguma Coisa</label>
+            <select id="selec" name="selec">
+                <option value="qualquer1">Valor1</option>
+                <option value="qualquer2">Valor2</option>
+                <option value="qualquer3">Valor3</option>
+                <option value="qualquer4">Valor4</option>
+
+                <!-- Ou utilizando um  label dentro da tag -->
+                
+                <option value="qualquer5" label="Olha Eu Aqui">
+                 <option value="qualquer6" label="Selecionado" selected>
+
+            </select>
+            
+        </p>
+
+        <!-- Colocalndo Grupos de Seleção -->
+
+        <p>
+            <label for="selectgroup">Selecione Alguma Coisa Dentro do Grupo</label>
+            <select id="selectgroup" name="selectgroup">
+                <!-- Inserindo o grupo -->
+                <optgroup label="Grupo1">
+                <option value="qualquer10" label="Item1">
+                <option value="qualquer11" label="Item2">
+                 <option value="qualquer12" label="Item3" selected>
+                </optgroup>
+                
+            </select>
+            
+        </p>
+
+        <!-- Input de Area -->
+
+        <p>
+            <label for="textarea">Text Area:</label>
+            <textarea name="textarea" id="textarea"></textarea>
+            
+        </p>
+
+
+
+    </form>
+
+
+</body>
+
+</html>

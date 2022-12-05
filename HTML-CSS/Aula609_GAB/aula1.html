@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GAB</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: 40px;
+                font-family: sans-serif;
+            }
+
+            /* Utilizando o gap:
+            gap: 30px; (Cola uma margem de 30px na linha e coluna)
+            row-gap: 30px; (coloca uma apenas nas linhas) 
+            column-gap; 30px; (// mesma coisa em colunas)
+            gap: 30px 80px; (30px em linhas e 80px  nas colunas)
+            */
+
+            /* Esta aula ensina uma gambiarra para uma grid que não funcione em determinado navegador */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+                max-width: 1200px;
+                margin: 0 auto;
+                gap: 30px 80px;
+            
+            }
+
+            .grid div {
+                background-color: aqua;
+                min-height: 100px;
+            }
+
+            .grid div:nth-child(5){
+                background-color: yellow;
+            }
+
+
+
+            
+        </style>
+    </head>
+
+<body>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+
+</body>
+
+</html>
+</head>
+
+<body>
+
+</body>
+
+</html>

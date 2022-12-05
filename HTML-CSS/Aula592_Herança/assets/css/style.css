@@ -1,0 +1,13 @@
+
+/* Visualizando aplicação de uma propriedade a um elemento que é pai de outros elementos que herdam sua propriedade. Div (pai) > h1 e p (filhos) */
+
+div{
+    color: rgb(255, 153, 0);
+}
+
+/* Se não quiser que tal propriedade seja herdada basta voltá-la para a inicial. Ex: Retirando a herança de h1 com initial, porém também se pode voltar a herança com inherit .. */
+
+h1{
+    color: initial;
+}
+

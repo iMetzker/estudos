@@ -1,0 +1,15 @@
+div{
+    width: 100px;
+    height: 100px;
+    /* Criterio para colocar uma do lado da outra */
+    display: inline-block;
+}
+#conteiner-a{
+    background-color: red;
+}
+#conteiner-b{
+    background-color: blue;
+    /* Para tirar totalmente o vão entre uma div e outra
+    margin-left: -4px; */
+    
+}

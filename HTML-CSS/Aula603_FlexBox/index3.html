@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box - Aula606</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 24px;
+    }
+
+     /* Inserindo uma margem apenas na parte debaixo do parágrafo, afastando assim um parágrafo do outro*/
+     p{
+        margin: 0 0 24px;
+    }
+
+    .two-columns {
+        display: flex;
+
+    }
+
+    /* Utilizando o display flex junto com o flex-direction para o meu texto continuar se alinhando na vertical*/
+    .two-columns .col {
+        display: flex;
+        flex-direction: column;
+        background-color:lawngreen;
+        margin: 15px;
+        padding: 30px;
+    }
+
+   
+    /* Configurando nossa segunda div dentro da anterior*/
+    .gallery{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .gallery .img{
+        flex: 1 20%;
+        height: 50px;
+        background-color: blue;
+        margin: 10px;
+
+    }
+</style>
+
+<body>
+
+    <div class="two-columns">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam facilis. Quisquam pariatur
+                numquam consectetur facere officiis, officia qui natus illo, sed quaerat enim? Suscipit eaque
+                reprehenderit culpa doloremque placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur ea, labore totam non ipsum,
+                fugit asperiores inventore voluptatum neque ex est? Doloremque autem tenetur distinctio cupiditate ab
+                delectus officiis?</p>
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam facilis. Quisquam pariatur
+                numquam consectetur facere officiis, officia qui natus illo, sed quaerat enim? Suscipit eaque
+                reprehenderit culpa doloremque placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur ea, labore totam non ipsum,
+                fugit asperiores inventore voluptatum neque ex est? Doloremque autem tenetur distinctio cupiditate ab
+                delectus officiis?</p>
+
+        <div class="gallery">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+
+        </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

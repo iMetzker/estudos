@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box Continuação - Aula605</title>
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background-color: yellow;
+    height: 800px;
+}
+
+/* width:100% significa 100% do espaço que sobrou entre os elementos.
+utilizando o flex para definir que os elementos terão uma quantidade igual de espaço restante e pode ser inserido o tamanho mínimo em seguida  */
+.flex-item{
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+
+
+/* Alinhando um elemento separadamento dos outros */
+.flex-item:nth-child(3){
+    align-self: flex-end ;
+}
+
+.flex-item:nth-child(4){
+    align-self: center ;
+}
+
+/* Alinhando de 'esticar' o item */
+
+.flex-item:nth-child(2){
+    align-self: stretch ;
+    margin-top: 50%;
+    text-align: center;
+}
+
+/* Realinhando com order, por padrão os itens são alinhando com 0 */
+
+.flex-item:nth-child(1){
+    order: -1;
+}
+.flex-item:nth-child(2){
+    order: -2;
+}
+
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+</body>
+</html>

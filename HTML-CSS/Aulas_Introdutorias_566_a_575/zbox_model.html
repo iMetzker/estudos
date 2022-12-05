@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!--Box Model Aula 575-->
+    <!-- Comentarios ctrl+k+c -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbie</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        /* Adicionando um elemento compartilhado em duas classes (mesmo adicionando bordas e paggind o tamanho total que prevalecera será do conteudo) */
+        .section-one,
+        .section-two{
+            box-sizing: border-box;
+        }
+    .section-one{
+        background-color: rgb(255, 22, 255);
+        background-image: url(https://birchtree.nyc3.digitaloceanspaces.com/images/wwdc18/dev-dots.png);
+        /* Ajustar a imagem */
+        background-size: cover;
+        /* <!-- Alinhar a imagem (topo e baixo) centro e (esquerda e direita) centro --> */
+        background-position: center center ;
+        border: 6px solid rgb(177, 140, 235);
+        padding: 15px;
+        width: 200px;
+        height: 150px;
+        color: aliceblue;
+        font-size: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        /* A margem ela empurra o conteudo todo */
+        margin: 40px;
+        
+   
+    }    
+    .section-two{
+        background: cyan;
+        /* Configurando as bordas separadamente */
+        /* Tamanho da borda de baixo */
+        border-bottom-width: 20px ;
+        /* Cor da borda de baixo (Não vai aparecer sem o elemento border bottom style) */
+        border-bottom-color: rgb(255, 0, 191);
+        /* Inserindo o estilo solido para a borda de baixo */
+        border-bottom-style: solid;
+        padding: 15px;
+        width: 200px;
+        height: 150px;
+        margin: 20px;
+    }
+    .section-trhee{
+        background: rgb(141, 233, 172);
+        padding: 15px;
+        width: 200px;
+        height: 150px;
+        margin: 20px;
+        /* Configurando cada borda separadamente */
+        border-style: solid;
+        border-width: 30px;
+        border-bottom-color: brown;
+        border-right-color: rgb(69, 42, 165);
+        border-left-color: aqua;
+        border-top-color: rgb(253, 253, 107);
+
+    }
+
+    /* Melhor maneira e mais utilizada para configurar as bordas */
+    .section-four{
+        background-image: url(https://img.freepik.com/vetores-gratis/desenvolvedores-web-desenhados-a-mao_23-2148819604.jpg?w=2000);
+        background-size: cover;
+        background-position: center center;
+        color: antiquewhite;
+        width: 500px;
+        height: 500px;
+        border-style: solid;
+        border-width: 30px;
+        border-bottom-color: brown;
+        border-right-color: rgb(69, 42, 165);
+        border-left-color: aqua;
+        border-top-color: rgb(253, 253, 107);
+        /* Alterando as margens da maneira correta */
+        /* Margem apenas no topo ou padding apenas em baixo, a ordem sempre será a mesma T D B E, podendo ser feita as configurações da maneira desejada. */
+        margin: 200px 0 0 0;
+        padding: 0 0 150px 0;
+
+    }
+
+    </style>
+
+</head>
+<body> 
+   <section class="section-one">
+    <header>
+        <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    </header>
+   </section>
+   <section class="section-two">
+    <header>
+        <h2>2</h2>
+    </header>
+    </section>
+    <section class="section-trhee">
+        <header>
+            <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        </header>
+       </section>
+    <section class="section-four">
+        <header>
+            <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        </header>
+       </section>
+</body>
+</html>

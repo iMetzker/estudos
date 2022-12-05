@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula607 - GRID</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        /* Configurando minha grid:
+        Configurando para ser duas colunas=
+        -grid-tamplate-columns: 50% 50% (podemos usar com medida em px também com 200px 50%; usando duas medidas onde uma é 200px e a outra ocupa o restante do espaço em branco (1 fragmento) : 200px 1fr (podemos colocar ainda uma 3ª coluna da mesma forma: 200px 1fr 1fr, podemos colocar ainda que a terceira é maior que a segunda inserindo um 200px 1fr 2fr);
+        - Otimizando a ação acima para não precisarmos inserir 1fr para cada coluna (exemplo de 10 colunas) usamos o: repeat(10, 1fr);
+        - Formatando para dispositivos móveis sem o media queury:
+        grid-template-columns: repeat(auto-fill, minmax( 320px, 1fr)) > auto-fill = a grid se adequa automatico de acordo com a largura min que foi inserira ou no maximo que sera de 1fr demonstra que será uma coluna;
+        /\ se retirar o max-width podemos ter até mais de 3 colunas automaticas esticando a tela;)
+         */
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap:30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid div{
+            background-color: aqua;
+            min-height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+    
+</body>
+</html>

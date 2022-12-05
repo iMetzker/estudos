@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        /* Utilizando os pseudos elementos usamos por boas práticas os dois ::, mas também funciona com um :.
+        Pseudo elementos são elementos incluidos nos elementos presentes existentes, porém eles não existem de verdade na pagina */
+
+        /* Acrescentando um elemento após -affter- do item, mas poderia ser antes com -before- */
+
+        ul  li::after{
+            content: ' -';
+            background: rgba(0, 0, 0, 0.3);
+            display: block;
+            color: rgb(255, 214, 79);
+            text-align: center;
+        }
+
+        /* Mudando apenas uma letra 'first-line' também possui a primeira linha que seria o 'first-line' */
+        p::first-letter{
+            font-size: 50px;
+            float: left;
+            display: block;
+            margin: 0 10px 10px 0;
+        }
+
+        /* Mudando o que está selecionado */
+        p::selection{
+            background-color: black;
+            color: azure;
+        }
+
+
+        /* Alterando apenas o placeholder do meu input */
+        .form::placeholder{
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti recusandae officiis error, perspiciatis aut neque, iste, nobis provident quibusdam dolore non. Vitae, exercitationem cumque ad sit repellat ipsam eum a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ex! Consequatur, voluptates animi? Eligendi ea nostrum sequi, assumenda error voluptate voluptatum, expedita id officia, quam quo velit eum quidem repellendus.</p>
+
+    <input class="form" type="text" placeholder="Olá">
+    <input type="text" placeholder="Olá">
+    <input type="text" placeholder="Olá">
+</body>
+
+</html>

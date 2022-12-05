@@ -1,0 +1,56 @@
+/* Elementos em ordem de pontuação de especificidade (maior especificidade para menor especificidade), abaixo da ordem hierárquica veja a 'conta' realizada, sendo que 100 seria cem e 010 seria dez. :
+1 - ID --- Classes, Atributos e Pseudo Classes --- Elementos e Pseudo-Elementos
+
+#p 1 --- 0                                    --- 0
+.p 0 --- 1                                    --- 0
+
+- Como podemos visualizar mesmo a classe sendo inserida abaixo do id, a regra que prevale é a do id, devido seu nivel de especificidade
+
+-Para visualizar a regra clara, apague a 3 linha onde terá #p.p{}
+*/
+
+ #p{
+    background: red;
+ }
+ .p{
+    background: yellow;
+ }
+
+ /* No CSS a ordem importa, sendo que a última irá prevalecer, como fazer para passar a especificidade do ID com a classe abaixo? Simples, vamos adicionar o ID e a Classe juntas nesse exemplo para somar um elemento ao entro no quesito de especificidade.
+ Pode ser feito de várias formas, sendo que quanto maior a especificidade mais difícil será de mudar. */
+
+ #p.p{
+    background: purple;
+ }
+
+ /* Passando com um elemento, abaixo o exemplo a tag p é um elemento e também possui pontuação, nesse caso o elemento tem pontuação menor de 1 elemento(p) ID (#p) e classe (.p)*/
+
+ p#p.p{
+    background: blue;
+ }
+
+
+ /* Ultrapassando com dois ID um do body que é o id #b e o outro do p que é o #p e ainda deixando o elemento e a classe do p ligadas */
+
+ #b p#p.p{
+    background: aqua;
+ }
+
+ /* E pode ser somado mais ainda incrementando um elemento do body */
+
+ body#b p#p.p{
+    background-color: crimson;
+ }
+
+ /* E por aí vai com pseudo elementos e pseudo classes (:hover ::selection), mas o RECOMENDADO é utilizar as classes, para o código não ficar tão complexo nesse momento */
+
+ /* Para sobrescrever QUALQUER COISA, basta inserir no HTML dentro da tag principal o atributo de style. ex: <body style="background=black;"> */
+
+ /* Outra forma mais forte de sobrescrever qualquer coisa até mesmo o style é o !important, porém é muito ruim sua utilização pois força o navegador a usálo. 
+ Detalhe, esse atributo só pode ser sobrescrito por ele mesmo e quem irá definir qual regra será aplicada é a ordem (o último, em caso de empate de especificidades) ou o mais alto em nível de especificidades*/
+
+ p{
+    background-color: teal !important;
+ }
+ 
+

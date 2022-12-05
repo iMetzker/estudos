@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbie Atack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(255, 11, 11);
+            align-items: center;
+        }
+
+        /* Pegando o caminho completo para atingir o link, poderia ser simplificado em (nav a) porém para necessidades mais especificas pode-se fazer da forma abaixo */
+
+        body nav ul li a{
+            text-decoration: none;
+            color: wheat;
+            font-size: 15px;
+
+            /* Fonte muito utilizada pois abrange muitas fontes iguais de varios sistemas operacionais */
+
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            /* Fim */
+
+            /* Mudando o formato do cursor */
+
+            cursor:all-scroll;
+
+            /* Fim */
+          
+            padding: 10px 20px;
+
+            /* O elemento <a> não empurra outros elementos por ser display inline, para conseguirmos esse resultado, mudamos o display para block */
+
+            display: block;
+
+            /* Fim */
+
+            text-transform: uppercase;
+
+        }
+
+        /* Mudando o efeito  quando passar o mouse em cima do link do menu */
+
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Fim */
+
+        /* Mudando o formato de apresentação da lista */
+
+        nav ul{
+            display: flex;
+
+            /* Retirando o modelo da lista que por padrao insere as bolinhas em cada item */
+
+            list-style: none;
+            
+            /* Fim */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Criando um menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#" target="_self" rel="myself">Home</a></li>
+            <li><a href="#" target="_self" rel="myself">About</a></li>
+            <li><a href="#" target="_self" rel="myself">Products</a></li>
+        </ul>
+    </nav>
+    <!-- Fim do menu de navegação -->
+</body>
+
+</html>

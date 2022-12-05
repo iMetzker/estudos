@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+        }
+
+
+        /* Colocando formato nad div, usando o rem como px, a position padra do navegador sempre é static, é essa position que iremos trabalhar*/
+
+        .filha1, .filha2, .filha3, .filha4{
+            width: 30rem;
+            height: 30rem;
+            background: red;
+            margin: 1rem;
+            position: static;
+          }
+
+          .filha2{
+            background: yellowgreen;
+            z-index: 1;
+          }
+
+          /* Movimentando a div à partir do topo 50px e andasse para o lado 50px, sendo que só é aceito o comando quando se muda a position */
+
+        /* 
+        Position: relative (abilita usar as possibilidades de top, left, right e bottom) o elemento tem uma posição relativa aos outros elementos. O elemento se comporta como se o local que ele estva aoccupando ainda estivesse ali.
+        
+        Position: absolute é como se mudasse o elemento de camada, é como se o elemento não existisse mais no local. Posição absoluta em relação ao navegador. O Elemento se comporta como se estivesse por cima de outras coisas*/
+        
+        /* Colocando um overflow no tamanho total da pagina, iserindo o bottom negativo, significa que o bottom está entrando para baixo do body. funciona com:
+        position: absolute;
+        bottom: -10rem;
+        right: 5rem*/
+        /* .filha1{
+            top: 5rem;
+            left: 5rem;
+            position: absolute;
+            right: 5rem;
+            bottom: -10rem;
+        } */
+
+        /* Alinhando a div filha 1 exatamente ao meio da tela.
+        Gambiarra: Olhar qual a largura e altura do elemento e reduzir pela metade negativo como mostrado abaixo. */
+        /* Inserindo o z-index para adicionar o elemento de camadas */
+        .filha1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -15rem;
+            margin-left: -15rem;
+            z-index: 2;
+
+        }
+
+        .filha3{
+            background: blue;
+            position: relative;
+            top: 35rem;
+            left: 20rem;
+        }
+        
+        /* Mexendo em um elemento que está dentro da minha div com  position relative. todos os meus elementos irão respeitar o pai que é position relative e se mover apenas dentro dele, se alterarmos a position para absolute, o elemento não se comportará como absolute pq ele respeitará a position do elemento pai que nesse caso é relative */
+        .outra{
+            background: #fff;
+            position: relative;
+            font-size: 5rem;
+            top: 5rem;
+            left: 5rem;
+        }
+
+        /* Alterando para position fixed, a div fica fixada na tela, independente do overflow, muito parecido com o position absolute, porém é fixo. Usado em back to top, menuzinho básico */
+        .filha4{
+            background-color: violet;
+            position: fixed;
+            top: 10%;
+            right: 0;
+        }
+
+        /* Position stiky, fazendo uma lista com rolagem. overflow no eixo y.
+         */
+
+        ul{
+            font-size: 3rem;
+            height: 10rem;
+            overflow-y: auto;
+        }
+
+        /* Para  fixar o topo dele e toda vez que rolar para cada classe, seja atualizado a nova classe dizemos que o top:0; */
+        ul li.sticky{
+            position: sticky;
+            background-color: gray;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha1"></div>
+        <div class="filha2"></div>
+        <div class="filha3">
+            <span class="outra">123</span>
+        </div>
+        <div class="filha4"></div>
+    </div>
+    <ul>
+        <li class="sticky">A</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li class="sticky">B</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li class="sticky">C</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+    </ul>
+</body>
+</html>

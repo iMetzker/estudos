@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* O display:flex; deve ser utilizado no elemento pai.
+        Ao ser inserido o display flex as configurações que são adicionadas são:
+        flex-direction; row (padrão)
+
+        align-items; strech (padrão) (flex-start: os elementos vao todos para cima; center: elementos ao centro do pai; end: os elementos ao fim do elemento pai; baseling: alinhando a fonte dos elementos por uma linha base)
+
+        justify-content; flex-start (padrão) (space-around = espalha os elementos de forma proporcional; space-between: distribui os elementos de forma igual, encostando na margin; space-evenly: distribui os elementos de forma igual afastando na margin)
+
+        gap: coloca um espaço entre cada elemento filho (não funciona em todos os navegadores)
+
+        - Alinhando um elemento no meio certinho do elemento pai: align items e justify content = center (pai  alinhar o texo ou elemento de forma horizontal flex-direction: row ou vertical flex-direction: column)
+
+        - Aling items = center e flex-direction = column alinha um item no centro pois o eixo main será na posição vertical e o eixo cross na horizontal
+        */
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+            height: 500px;
+        }
+
+
+        .flex-item{
+            background-color: red;
+            margin: 10px;
+        }
+        
+        /* Mudando um elemento específico, no caso abaixo o item 3 (child), ao mudar a fonte de um item por exemplo, é importante utilizar junto o aling items:baseline no elemento pai para os elementos serem alinhados pela linha abaixo da fonte */
+        .flex-item:nth-child(3){
+            font-size: 40px;
+        }
+
+        /* Alterando meu conteiner 2, para os elementos que sairem do meu conteiner caiam abaixo.
+        para os elementos cair usamos:
+        flex-flow: column wrap (aqui alteramos a direction e o wrap)
+        Também podemos alinhas apenas o conteúdo dos itens com align-contet:center */
+
+        .flex-container2{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            background-color: yellowgreen;
+            height: 640px;
+            margin-top: 40px;
+            align-content: space-between;
+        }
+
+        /* Para determinamos que os elementos ocuparam x da largura do elemento pai com width, alterando o width mudamos bastante o layout */
+        .flex-item2{
+            width: 33.33%;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+    </div>
+
+    <div class="flex-container2">
+        <div class="flex-item2">Um</div>
+        <div class="flex-item2">Dois</div>
+        <div class="flex-item2">Três</div>
+        <div class="flex-item2">Quatro</div>
+        <div class="flex-item2">Cinco</div>
+        <div class="flex-item2">Um</div>
+        <div class="flex-item2">Dois</div>
+        <div class="flex-item2">Três</div>
+        <div class="flex-item2">Quatro</div>
+        <div class="flex-item2">Cinco</div>
+        <div class="flex-item2">Um</div>
+        <div class="flex-item2">Dois</div>
+        <div class="flex-item2">Três</div>
+        <div class="flex-item2">Quatro</div>
+        <div class="flex-item2">Cinco</div>
+        <div class="flex-item2">Um</div>
+        <div class="flex-item2">Dois</div>
+        <div class="flex-item2">Três</div>
+        <div class="flex-item2">Quatro</div>
+        <div class="flex-item2">Cinco</div>
+        <div class="flex-item2">Um</div>
+        <div class="flex-item2">Dois</div>
+        <div class="flex-item2">Três</div>
+        <div class="flex-item2">Quatro</div>
+        <div class="flex-item2">Cinco</div>
+       
+    
+        
+    </div>
+    
+</body>
+</html>

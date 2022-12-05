@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbie</title>
+
+    <style>
+        body{
+           font-family: sans-serif; 
+        }
+
+    /* Inserindo um estilo simples para a tabela */
+    table td, table th{
+        border: 1px solid black;
+        padding: 5px;
+
+        /* Alinhando o texto dentro das colunas */
+        text-align: center;
+    }
+    /* Fim */
+
+
+    /* Aproximando cada elemento um do outro para que não fiquem espaços na tabela */
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+    /* Fim */
+
+    table caption{
+
+        /* Por padrao vem  centralizada, mas pode-se mudar */
+        caption-side: bottom;
+        
+        /* Alinhamento do texto */
+        text-align: left;
+        font-style:oblique;
+        font-size: 20px;
+
+        /* Afastando o texto da tabela (mexendo com a margem) */
+        margin-top: 10px;
+
+    }
+
+    /* Inserindo um estilo apenas no rodapé */
+    tfoot td{
+        background-color: #ddd;
+        font-style: italic;
+    }
+
+    /* Pode-se alterar apenas o cabeçalho também ou alterar o rodapé e cabeçalho, abaixo o exemplo que alterando os dois juntos */
+
+    tfoot td, table th{
+        background-color: #ddd;
+    }
+
+    .responsive-table{
+        /* Modificando a largura máxima da  tabela em 100% da tela */
+        max-width: 100%;
+        
+        /* O que passar no eixo X se torna automático (criando barra de rolagem) */
+        overflow-x: auto;
+    }
+
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!-- Inserindo uma tabela -->
+    <table>
+
+        <!-- Inserindo uma descrição para a tabela -->
+        <caption>Descrição Tabela</caption>
+
+        <!-- Dentro da tabela é interessante ter um cabeçalho (titulo da tabela), para isso usamos o thead -->
+        <thead>
+
+            <!-- Tag de coluna é o <tr> e a tag de linha usamos ou <td> ou <th>, no caso abaixo usamos o th pois estamos na tag Tabble Head -->
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 1</th>
+                    <th>Titulo 1</th>  
+                </tr>
+        </thead>
+        <!-- Fim do titulo da tabela -->
+
+        <!-- Criando um corpo para a tabela -->
+        <tbody>
+
+            <tr>
+                <td>Corpo 1</td>
+
+                <!-- Alterando o numero de colunas que a minha linha irá ocupar com 'colspan' e alterando o numero de colunas que minha linha ira ocupar com 'rowspan' -->
+                <td colspan="2" rowspan="2">Corpo 1</td>
+                <!-- Fim -->
+                
+            </tr>
+
+            <!-- Inserindo mais linhas <tr> -->
+                <tr>
+                <td>Corpo 1</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 1</td>
+                    <td>Corpo 1</td>
+                </tr>
+            <!-- Fim linhas -->
+
+
+        </tbody>
+        <!-- Fim corpo -->
+
+        <!-- Inserindo um rodapé para a tabela -->
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 1</td>
+                <td>Corpo 1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Problema: Tela de celular não  abrange a pagina toda e por concequencia a tabela passa do campo de visualização, ocorrendo isso, só é possível rolar a barra do site todo para ver a tabela. 
+    Solução: Inserir uma Div e incrementar um over-flow no style(barra de rolagem para o que passar da tela) -->
+    <div class="responsive-table">
+    <table>
+        <caption>Descrição Tabela</caption>
+        <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 1</th>
+                    <th>Titulo 1</th>  
+                </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Corpo 1</td>
+                <td colspan="2" rowspan="2">Corpo 1</td>  
+            </tr>
+                <tr>
+                <td>Corpo 1</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 1</td>
+                    <td>Corpo 1</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 1</td>
+                <td>Corpo 1</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+</body>
+</html>

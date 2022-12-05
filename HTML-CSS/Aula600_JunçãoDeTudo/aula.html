@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Acrescentando um efeito do CSS para rolar a página,  a medida que se clica no menu. */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Precisa ter a largura máxima para o margin 0 auto funcionar. Nesse caso o padding funciona para quando o elemento ficar muito póximo da borda da página. */
+.home{
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 58px;
+}
+.home .col{
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+   
+}
+
+.home .col-content{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+   
+}
+
+.home::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+/* Alinhando o menu com a página centralizada anteriormente em .home */
+.menu ul{
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+.menu ul li{
+    float:left;
+}
+
+.menu ul li a{
+    display: block;
+    color: azure;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+/* Para ter um efeito de entrada basta adicionar no elemento pai o transition */
+
+.menu ul li a:hover{
+  background-color: aqua;
+  color: black;
+}
+
+/* Resolvendo o problema da pagina fina embaixo do menu. ir no elemento pai e alterar o paddin para o tamanho da altura exata do menu. Elemento pai de toda a pagina, nesse caso a .home(paddin-top). Repetir o processo para cada div pai de cada seção*/
+
+.full{
+    max-width: 100%px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 73px;
+    background-color: aqua;
+    height: 100vh;
+
+}
+
+/* Colocando um elemento no footer da pagina */
+
+.full-page-content{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@media all and (max-width: 320px){
+    .home .col{
+    width: 100%;
+      }  
+}
+
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .home .col{
+    width: 50%;
+      }  
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .home .col{
+    width: 33.33%;
+      }  
+}
+
+
+@media (min-width: 1200px) {
+    .home .col{
+    width: 25%;
+      }  
+}
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#full-page">Full</a></li>
+        </ul>
+    </nav>
+    <div class="home">
+
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+        <div class="col">
+            <div class="col-content">Conteudo</div>
+        </div>
+    </div>
+
+    <section id="full-page" class="full">
+        <div class="full-page-content">
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo id perspiciatis ex officia similique, at dicta est dolorum iure, ratione labore, alias atque excepturi. Sequi obcaecati molestias vitae inventore asperiores.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed. Eius deserunt natus reprehenderit omnis doloribus voluptas, praesentium rem modi, vero quas distinctio saepe nesciunt velit dolores accusamus sit odit.</p>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

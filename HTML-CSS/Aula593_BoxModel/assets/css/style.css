@@ -1,0 +1,62 @@
+
+/* 
+- Falando sobre o content (conteúdo): 
+
+Display-block aceita definições de width e height pois é um bloco;
+Display-inline não aceita definições de width e heigth;
+ */
+
+ /* 
+ - Falando sobre o content:
+ Depois que definimos a altura e a largura do elemento display-block, seu conteuúdo pode ultrapassar esse tamanho e seu conteúdo erá ficar 'solto na tela', simplesmente ultrapassando nosso elemento, nesse caso, nossa div. 
+ 
+ > Acrescentando uma barra de rolagem:
+ 
+ overflow: auto; 
+  
+ (nesse caso só vai aparecer a barra se o conteudo ultrapassar a div, se não, não é possível visualizar a barra de rolagem)
+
+ */
+
+
+.texto{
+background-color: rebeccapurple;
+width: 200px;
+height: 200px;
+overflow: auto;
+}
+
+ /* As propriedades que controlam o content no box model é o width e o height: 
+ 
+ - width: Largura
+-  max-width: Largura máxima em comparação com o tamanho que o navegador está aberto, se eu diminuo o tela, o conteúdo diminui junto, se tornando proporcional, o mesmo ocorre abaixo.
+-  min-width: Largura mínima
+
+Ajustando ao meio a DIV com a margin esquerda e direita automatica
+ 
+-I
+ */
+
+ .texto{
+    box-sizing: border-box;
+    width: 100% ;
+    max-width: 600px ;
+    min-width: 0 ;
+    height: 200px;
+    max-height: 500px;
+    min-height: 0;
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border: 5px solid black;
+ }
+
+ /* O height não pega no caso acima, então usamo outra unidade de medida que é o view port */
+
+ /* Padding é um enchimento */
+
+ /* Border primeiro é o tamanho e depois o tipo e depois a cor. */
+
+ /* Box-sizing: border-box é para o conteudo total ser o tamanho definido width e height*/
+
+ /* A margin não entra na regra do border box até porque ela serve apenas para empurar um conteudo do outro, é a distancia dele */
+
