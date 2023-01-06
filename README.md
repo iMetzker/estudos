@@ -1,23 +1,33 @@
+# Javascript e TypeScript (Full Stack)
+
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)
+![](https://img.shields.io/badge/REACT-0096c7?style=for-the-badge&logo=react&logoColor=white)
+![](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+
 ## 📎 Sobre
+
 
 Este é um repositório apenas para estudos e para praticar exercídios propostos durante o curso. 
 
-<br> 
 
-<strong>Curso:</strong> Javascript e TypeScript - front-end e back-end (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns
 
-<br>
+## 🛸 Tecnologias Abordadas
 
-## 🛸 Tecnologias Utilizadas
+- NODE
+- EXPRESS
+- noSQL
+- REACT
+- HOOKS
+- REDUX
+- DESIGN PATTERNS
 
-<div style="display: inline_block"><br>
-  
+## 👾 Créditos
 
-  <img align="center" alt="Metzker-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-  <img align="center" alt="Metzker-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-  <img align="center" alt="Metzker-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Metzker-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Metzker-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  
+<p>
+Curso oferecido pela <a href="https://www.udemy.com/">Udemy</a>
+</p>
 
-</div>
