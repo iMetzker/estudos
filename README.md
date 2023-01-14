@@ -24,6 +24,10 @@ Este é um repositório apenas para estudos e para praticar exercídios proposto
 - HOOKS
 - REDUX
 - DESIGN PATTERNS
+- JAVA SCRIPT
+- TYPE SCRIPT
+- HTML / CSS
+
 
 ## 👾 Créditos
 
