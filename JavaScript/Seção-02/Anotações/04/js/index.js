@@ -8,5 +8,5 @@ const num03 = prompt('Digite seu último número: ');
 
 const resultado = (Number(num01) + Number(num02)) * Number(num03);
 
-alert(resultado);
+alert(`O resultado da sua conta de ${num01} + ${num02} * ${num03} foi: ${resultado}`);
 
