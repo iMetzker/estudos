@@ -11,7 +11,7 @@
 ## 📎 Sobre
 
 
-Este é um repositório apenas para estudos e para praticar exercídios propostos durante o curso. 
+Este é um repositório apenas para estudos e para praticar exercícios propostos durante o curso. 
 
 
 
