@@ -1,4 +1,4 @@
-// MAIS SOBRE NUMBERS - AULA 26
+// MAIS SOBRE NUMBERS - AULA 26 -
 
 let num1 = 1;
 let num2 = 2;
@@ -24,7 +24,7 @@ num4 += num5; // 8
 num4 += num5; // 9
 num4 += num5; // 1.0
 
-// Resolvendo o problema do resultado não ser inteiro com = parseFloat e toFixed 
+// Resolvendo o problema do resultado não ser inteiro com = parseFloat e toFixed
 num4 = parseFloat(num4.toFixed(1));
 console.log(num4);
 

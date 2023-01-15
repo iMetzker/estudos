@@ -1,4 +1,4 @@
-// Mais sobre string aula 24
+// Mais sobre string  - aula 24
 
 //               01234567
 let umaString = "Um texto";
