@@ -1,3 +1,3 @@
 // AULA 27 - Objeto Math
 
-// teste // // //
+// verificação //
