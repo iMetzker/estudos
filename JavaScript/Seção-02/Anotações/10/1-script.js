@@ -32,8 +32,7 @@ const pessoa02 = criaPessoa("Luiza", "Ferreira", 24);
 const pessoa03 = criaPessoa("Maria", "Carla", 30);
 const pessoa04 = criaPessoa("Joana", "Antonia", 41);
 
-// SIMPLIFICANDO O OBJETO DENTRO DA FUNÇÃO, POIS OS VALORES SE REPENTEM nome: nome
-
+// SIMPLIFICANDO O OBJETO DENTRO DA FUNÇÃO, POIS OS VALORES SE REPENTEM nome: nome, sobrenome: sobrenome, idade: idade
 function criaPessoaSimplificando(nome, sobrenome, idade) {
   return { nome, sobrenome, idade };
 }
