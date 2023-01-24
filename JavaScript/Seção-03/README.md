@@ -22,4 +22,8 @@
         <td><a href="./Anotações/02">Modelo HTML</a></td> 
         <td></td>
     </tr>
+    <tr>
+        <td></td>
+        <td><a href="./Exercícios/01">Calculo de IMC</a></td> 
+    </tr>
 </table>
