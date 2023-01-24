@@ -15,7 +15,11 @@
         <th>Exercícios</th>
     </tr>
     <tr>
-        <td><a href="./Anotações/01">Ex</a></td>
-        <td><a href="./Exercicios/01">Ex</a></td>
+        <td><a href="./Anotações/01">Short-Circuit</a></td> 
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="./Anotações/02">Modelo HTML</a></td> 
+        <td></td>
     </tr>
 </table>
