@@ -30,4 +30,9 @@
         <td><a href="./Anotações/03">Operador Ternário</a></td> 
         <td></td>
     </tr>
+    <tr>
+        <td><a href="./Anotações/04">Objeto Date</a></td> 
+        <td><a href="./Anotações/04">Formatando a data</a></td>
+    </tr>
+    
 </table>
