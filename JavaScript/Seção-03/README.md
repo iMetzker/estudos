@@ -26,4 +26,8 @@
         <td></td>
         <td><a href="./Exercícios/01">Calculo de IMC</a></td> 
     </tr>
+    <tr>
+        <td><a href="./Anotações/03">Operador Ternário</a></td> 
+        <td></td>
+    </tr>
 </table>
