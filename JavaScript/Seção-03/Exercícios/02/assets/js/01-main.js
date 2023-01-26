@@ -78,8 +78,7 @@ function month (numberMonth) {
 }
 
 function zeroTheLeft (num) {
-    const numFormat = num >= 10 ? num : `0${num}`;
-    return numFormat;
+    return num >= 10 ? num : `0${num}`;
 }
 
 function createData (data) {
