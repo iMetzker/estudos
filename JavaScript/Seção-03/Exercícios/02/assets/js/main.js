@@ -77,6 +77,11 @@ function month (numberMonth) {
     }
 }
 
+function zeroTheLeft (num) {
+    const numFormat = num >= 10 ? num : `0${num}`;
+    return numFormat;
+}
+
 function createData (data) {
     const day = data.getDay();
     const nameDay = dayWeekText (day);
@@ -86,8 +91,8 @@ function createData (data) {
 
     const dayWeek = data.getDate();
     const year = data.getFullYear();
-    const hour = data.getHours();
-    const minutes = data.getMinutes();
+    const hour = zeroTheLeft(data.getHours());
+    const minutes = zeroTheLeft(data.getMinutes());
 
     return `${nameDay}, ${dayWeek} de ${nameMonth} de ${year} às ${hour}:${minutes}`;
 
