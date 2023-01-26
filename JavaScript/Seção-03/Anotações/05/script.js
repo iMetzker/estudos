@@ -27,8 +27,8 @@ switch (diaSemana) {
   case 6:
     diaDaSemanaTexto = "Sábado";
     break;
-    default :
-    diaDaSemanaTexto = 'Inválido';
+  default:
+    diaDaSemanaTexto = "Inválido";
 }
 
 console.log(diaSemana, diaDaSemanaTexto);
