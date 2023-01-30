@@ -58,5 +58,9 @@
         <td><a href="./Anotações/10">Estrutura de Repetição For Of</a></td> 
         <td><a href="./Exercícios/04">Node List</a></td>
     </tr>
+    <tr>
+        <td><a href="./Anotações/11">While e Do While</a></td> 
+        <td></td>
+    </tr>
     
 </table>
