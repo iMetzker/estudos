@@ -1,0 +1,7 @@
+{
+    "users": [
+      { "id": 1, "name": "teste", "email": "teste@gmail.com", "senha": "123456" },
+      { "id": 2, "name": "validar", "email": "validar@gmail.com", "senha": "123456" }
+    ]
+    
+  }
