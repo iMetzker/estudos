@@ -1,4 +1,4 @@
-# SEÇÃO 02
+# SEÇÃO 03
 
 ![](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&logoColor=white)
 
