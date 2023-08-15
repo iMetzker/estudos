@@ -30,7 +30,7 @@ class Carro {
 
   desacelerar() {
     if (this[_velocidade] <= 0) return;
-    this[_velocidade]--;
+    this[_velocidade]--;;;
   }
 }
 
@@ -40,5 +40,7 @@ for (let i = 0; i <= 200; i++) {
   c1.acelerar();
 }
 
-c1.velocidade = 999; // ACESSANDO O SETTER
-console.log(c1.velocidade); // ACESSANDO O GETTER
+c1.velocidade = 999; // ACESSANDO O SETTER (SE TORNA ATRIBUTO)
+console.log(c1.velocidade); // ACESSANDO O GETTER (SE TORNA ATRIBUTO)
+
+// SE TORNA ATRIBUTO POIS NÃO PRECISA CHAMAR COMO MÉTODO c1.velocidade()
