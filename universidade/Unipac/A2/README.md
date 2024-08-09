@@ -68,7 +68,7 @@ Após a instalação, iremos ter acesso ao executável gcc, que será o respons�
 
 <br>
 <img src="assets/t1-vscode.png">
-<br> <br>
+<br>
 
 Após seguir esses passos basta reiniciar o ambiente de desenvolvimento e seu VSCode já estará <b>pronto para compilar códigos em C utilizando a tecla F6.</b>
 
