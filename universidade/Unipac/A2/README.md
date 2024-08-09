@@ -1,6 +1,6 @@
 <p align="right">
-  <a href="#-configurações">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-resoluções">Resoluções dos Exercícios</a>
+  <a href="#-ambiente">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-respostas">Respostas dos Exercícios</a>
 </p>
 
 <br> <br>
@@ -21,7 +21,7 @@ Docente Maria Laura
 ## Configuração de Ambiente no Windows
 Configurações iniciais para a compilação de códigos na linguagem C utilizando a IDE do VsCode. <br>
 
-#### | Simulando o DEVC++
+#### MinGW
 Para executar programas em C no VSCode, precisamos de um arquivo que vem junto com a instalação do DEVC++, este arquivo é o Mingw, faça o download e instalação dele. 
 <br> <br>
 <img src="assets/t1-mingw.png">
@@ -38,16 +38,14 @@ Após a instalação, iremos ter acesso ao executável gcc, que será o respons�
 <br>
 1. Clique na barra de iniciar do Windows, digite 'variaveis de ambiente' e vá para as propriedades: 
 
-<br>
 <img src="assets/v1-sist.png">
 <br> <br>
 <img src="assets/v2-sist.png">
-<br> <br>
+<br>
 
 2. Localize o Path dentro das variáveis do sistema, e clique em ``Editar``:
-<br> <br>
+
 <img src="assets/v3-sist.png">
-<br> <br>
 
 3. Clique em ``Procurar`` e entre na pasta bin do MinGw, para salvar o diretório dessa nova variável que será utilizada, que é o gcc. Após isso, clique me ``Ok`` e feche a aba:
 <br> <br>
