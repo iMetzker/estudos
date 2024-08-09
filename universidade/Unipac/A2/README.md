@@ -1,6 +1,6 @@
 <p align="right">
-  <a href="#-configuração-de-ambiente-no-windows">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-resoluções-dos-exercícios">Respostas dos Exercícios</a>
+  <a href="#configuração-de-ambiente-no-windows">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#resoluções-dos-exercícios">Respostas dos Exercícios</a>
 </p>
 
 <br> <br>

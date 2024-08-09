@@ -2,7 +2,6 @@
 em graus Celsius e retorne para o usuário essa mesma temperatura em graus
 Fahrenheit. A conversão é feita com a fórmula: ((C * 9)/5) + 32 ou F = C * 1.8 + 32 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
