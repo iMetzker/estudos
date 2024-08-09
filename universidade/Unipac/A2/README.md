@@ -1,6 +1,6 @@
 <p align="right">
-  <a href="#-ambiente">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-respostas">Respostas dos Exercícios</a>
+  <a href="#-configuração-de-ambiente-no-windows">Configurações de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-resoluções-dos-exercícios">Respostas dos Exercícios</a>
 </p>
 
 <br> <br>
@@ -21,17 +21,22 @@ Docente Maria Laura
 ## Configuração de Ambiente no Windows
 Configurações iniciais para a compilação de códigos na linguagem C utilizando a IDE do VsCode. <br>
 
-#### MinGW
 Para executar programas em C no VSCode, precisamos de um arquivo que vem junto com a instalação do DEVC++, este arquivo é o Mingw, faça o download e instalação dele. 
-<br> <br>
+<br>
+1. Faça o download do MinGW:
+<br>
 <img src="assets/t1-mingw.png">
-<br> <br>
+<br> 
 <img src="assets/t2-mingw.png">
-<br> <br>
+<br>
+2. Faça a instalação, seguindo os passos abaixo:
+<br>
 <img src="assets/t3-mingw.png">
-<br> <br>
+<br>
 <img src="assets/t4-mingw.png">
-<br> <br>
+<br>
+3. Nesta última tela, marque o pacote básico do MinGW, vá no canto superior da tela, selecione ``instalation`` e ``apply changes``:
+<br>
 <img src="assets/t5-mingw.png">
 
 Após a instalação, iremos ter acesso ao executável gcc, que será o responsável pela compilação dos nossos códigos em C, este executável deve ser acessível em todo o nosso sistema, para isso:
@@ -39,7 +44,7 @@ Após a instalação, iremos ter acesso ao executável gcc, que será o respons�
 1. Clique na barra de iniciar do Windows, digite 'variaveis de ambiente' e vá para as propriedades: 
 
 <img src="assets/v1-sist.png">
-<br> <br>
+<br>
 <img src="assets/v2-sist.png">
 <br>
 
@@ -48,17 +53,16 @@ Após a instalação, iremos ter acesso ao executável gcc, que será o respons�
 <img src="assets/v3-sist.png">
 
 3. Clique em ``Procurar`` e entre na pasta bin do MinGw, para salvar o diretório dessa nova variável que será utilizada, que é o gcc. Após isso, clique me ``Ok`` e feche a aba:
-<br> <br>
+<br>
 <img src="assets/v4-sist.png">
 
+## | Configurações do VSCode
 
-### | Configurações do VSCode
-
-Para execução dos programas em C no VSCode, adicione duas novas extensões: 
-<br> <br>
+1. Para execução dos programas em C no VSCode, adicione duas novas extensões: 
+<br>
 <img src="assets/t2-vscode.png">
 
-Para configurar o VSCode a executar corretamente o gcc, atualize o caminho utilizado no Terminal Integrated, que por default estará null. 
+2. Configure o VSCode a executar corretamente o gcc, atualizando o caminho utilizado no Terminal Integrated, que por default estará null. 
 
 - Abra seu VSCode e vá nas configurações ``CTRL`` + ``,`` e digite na barra de pesquisa ``shell`` , localize o ``Terminal Integrated Default`` e mude para que execute no próprio promt do windows.
 

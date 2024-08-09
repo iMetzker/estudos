@@ -18,4 +18,4 @@ int main()
         printf("O dobro da area do seu quadrado e: %d\n", dobro);
 
     return 0;
-}
+};
