@@ -14,7 +14,7 @@ int main() {
     printf("Informe a quantidade total de kg de peixes pescados: ");
     scanf("%f", &kg_pescado);
 
-    if(kg_pescado <= 50 || kg_pescado == 0) {
+    if (kg_pescado <= 50 || kg_pescado == 0) {
         printf("Nao sera nescessario o pagamento de nenhuma multa.");
     } else {
         kg_excedente = kg_pescado - 50;
