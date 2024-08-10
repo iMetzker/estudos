@@ -7,7 +7,8 @@ e escrever em tela o valor final que será pago pelo consumidor.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
     float custo_fabrica, perc_venda, perc_imposto, custo_final;
 
     printf("Insira o custo de fabrica do carro: ");

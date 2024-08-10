@@ -7,7 +7,8 @@ deverá pagar de multa. */
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
     float kg_pescado, kg_excedente, valor_multa;
 
     printf("Calculadora de multa do seu Ze\n");
@@ -23,4 +24,4 @@ int main() {
     }
 
     return 0;
-}
+};

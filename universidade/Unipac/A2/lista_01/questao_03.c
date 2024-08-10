@@ -26,4 +26,4 @@ int main() {
     printf("A raiz quadrada da soma do primeiro numero com o segundo numero digitado e: %.2f\n", equa_02);
 
     return 0;
-}
+};

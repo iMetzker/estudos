@@ -9,13 +9,13 @@ int main()
 {
     int lado_quadrado, area, dobro;
 
-        printf("Digite um numero inteiro, que sera o lado do seu quadrado: ");
-        scanf("%d", &lado_quadrado);
+    printf("Digite um numero inteiro, que sera o lado do seu quadrado: ");
+    scanf("%d", &lado_quadrado);
 
-        area = lado_quadrado * lado_quadrado;
-        dobro = area * 2;
-        printf("A area do seu quadrado e: %d\n", area);
-        printf("O dobro da area do seu quadrado e: %d\n", dobro);
+    area = lado_quadrado * lado_quadrado;
+    dobro = area * 2;
+    printf("A area do seu quadrado e: %d\n", area);
+    printf("O dobro da area do seu quadrado e: %d\n", dobro);
 
     return 0;
 };
