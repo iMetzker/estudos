@@ -6,14 +6,14 @@ Fahrenheit. A conversão é feita com a fórmula: ((C * 9)/5) + 32 ou F = C * 1.
 #include <stdlib.h>
 
 int main() {
-int temp_celcius, temp_fahrenheit;
+float temp_celcius, temp_fahrenheit;
 
 printf("Digite a temperatura em graus Celsius que deseja converter para Fahrenheit: ");
-scanf("%d", &temp_celcius);
+scanf("%f", &temp_celcius);
 
 temp_fahrenheit = temp_celcius * 1.8 + 32;
 
-printf("%d graus Fahrenheit.", temp_fahrenheit);
+printf("%.2f graus Fahrenheit.", temp_fahrenheit);
 
 return 0;
 };
