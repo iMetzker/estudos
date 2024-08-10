@@ -18,7 +18,7 @@ int main()
     perc_imposto = (custo_fabrica * 45) / 100;
     custo_final = custo_fabrica + perc_venda + perc_imposto;
 
-    printf("O valor final a ser sera de R$ %.2f", custo_final);
+    printf("O valor final a ser pago será de R$ %.2f", custo_final);
 
     return 0;
 };

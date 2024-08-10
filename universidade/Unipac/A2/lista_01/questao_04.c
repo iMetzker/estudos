@@ -11,12 +11,12 @@ int main()
 {
     float kg_pescado, kg_excedente, valor_multa;
 
-    printf("Calculadora de multa do seu Ze\n");
+    printf("Calculadora de multa do seu Zé\n");
     printf("Informe a quantidade total de kg de peixes pescados: ");
     scanf("%f", &kg_pescado);
 
     if (kg_pescado <= 50 || kg_pescado == 0) {
-        printf("Nao sera nescessario o pagamento de nenhuma multa.");
+        printf("Não será nescessário o pagamento de nenhuma multa.");
     } else {
         kg_excedente = kg_pescado - 50;
         valor_multa = kg_excedente * 4;
