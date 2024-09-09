@@ -30,5 +30,8 @@ Lista de exercícios 02 - Aprofundando em laços de repetição com while e for,
         <td><a href="./questao_04.c">Questão 04</a></td>
         <td>Números Primos (busca binária)</td>
     </tr>
-    
 </table>
+
+## 💻 Preview
+
+<img src="../assets/resume_list/preview_list2.png">
