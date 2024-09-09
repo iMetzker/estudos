@@ -15,19 +15,19 @@ Lista de exercícios 02 - Aprofundando em laços de repetição com while e for,
         <th>Descrição da Atividade</th>
     </tr>
     <tr>
-        <td><a href="./lista_02/questao_01.c">Questão 01</a></td>
+        <td><a href="./questao_01.c">Questão 01</a></td>
         <td>Jogo da Forca (busca linear)</td>
     </tr>
     <tr>
-        <td><a href="./lista_02/questao_02.c">Questão 02</a></td>
+        <td><a href="./questao_02.c">Questão 02</a></td>
         <td>Lista Randômica (busca linear)</td>
     </tr>
     <tr>
-        <td><a href="./lista_02/questao_03.c">Questão 03</a></td>
+        <td><a href="./questao_03.c">Questão 03</a></td>
         <td>Lista de Contas (busca binária)</td>
     </tr>
     <tr>
-        <td><a href="./lista_02/questao_04.c">Questão 04</a></td>
+        <td><a href="./questao_04.c">Questão 04</a></td>
         <td>Números Primos (busca binária)</td>
     </tr>
     
