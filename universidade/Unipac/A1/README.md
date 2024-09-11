@@ -77,29 +77,36 @@ Após seguir esses passos basta reiniciar o ambiente de desenvolvimento e seu VS
     <tr>
         <th>Lista de Exercícios - 01</th>
         <th>Lista de Exercícios - 02</th>
+        <th>Lista de Exercícios - 03</th>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_01.c">Questão 01</a></td>
         <td><a href="./lista_02/questao_01.c">Questão 01</a></td>
+        <td><a href="./lista_03/questao_01.c">Questão 01</a></td>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_02.c">Questão 02</a></td>
         <td><a href="./lista_02/questao_02.c">Questão 02</a></td>
+        <td><a href="./lista_03/questao_01.c">Questão 02</a></td>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_03.c">Questão 03</a></td>
         <td><a href="./lista_02/questao_03.c">Questão 03</a></td>
+        <td><a href="./lista_03/questao_01.c">Questão 03</a></td>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_04.c">Questão 04</a></td>
         <td><a href="./lista_02/questao_04.c">Questão 04</a></td>
+        <td>-</td>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_05.c">Questão 05</a></td>
         <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td><a href="./lista_01/questao_06.c">Questão 06</a></td>
+        <td>-</td>
         <td>-</td>
     </tr>
     
