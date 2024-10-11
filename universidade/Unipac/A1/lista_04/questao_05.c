@@ -5,7 +5,8 @@ nessa lista utilizando BUSCA BINÁRIA. */
 #include <stdio.h>
 
 int main() {
-    int n, i, valor, inicio, fim, meio, encontrado = 0;
+    int n, i, valor, inicio, fim, meio;
+    int encontrado = 0;
     // int arr[n];
 
     printf("Digite a quantidade de elementos que a sua lista terá: ");

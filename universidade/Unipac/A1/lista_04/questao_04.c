@@ -7,7 +7,7 @@ uma turma. */
 
 int main() {
     int i, j, chave;
-    int notas[10] = {7, 9, 8, 6, 5, 8, 9, 6, 7, 8};
+    int notas[10] = {7, 2, 8, 6, 5, 4, 9, 6, 7, 10};
     int temp;
 
     for (i = 0; i < 10 - 1; i++) {
