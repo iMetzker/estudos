@@ -4,6 +4,14 @@ função com diferentes valores no programa principal. */
 
 #include <stdio.h>
 
+int somaRecursiva(int num) {
+    if (num == 1) {
+        return 1;
+    } else {
+        return num + somaRecursiva(num - 1);
+    }
+}
+
 int main() {
     int n;
 
@@ -11,14 +19,6 @@ int main() {
     scanf("%d", &n);
 
     if (n > 0) {
-        int somaRecursiva(int num) {
-            if (num == 1) {
-                return 1;
-            } else {
-                return num + somaRecursiva(num - 1);
-            }
-        }
-
         printf("A soma de 1 até %d é: %d\n", n, somaRecursiva(n));
     } else {
         printf("Por favor, digite um número positivo.\n");

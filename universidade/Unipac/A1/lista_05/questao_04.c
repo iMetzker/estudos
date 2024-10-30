@@ -41,7 +41,7 @@ int main() {
     if (resultado != -1) {
         printf("Elemento %d encontrado no índice: %d\n", elemento, resultado);
     } else {
-        printf("Elemento %d não encontrado no array.\n", elemento);
+        printf("Elemento %d não encontrado no array. -1 \n", elemento);
     }
 
     return 0;
