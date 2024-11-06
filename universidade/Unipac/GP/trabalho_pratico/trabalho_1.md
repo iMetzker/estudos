@@ -71,7 +71,7 @@ Para o desenvolvimento de um sistema de reserva online para hotéis, iremos deta
 
 <b>Conduzir o treinamento final da equipe de operações:</b> Garantir que os usuários finais e o suporte técnico do hotel estejam capacitados para utilizar o sistema.
 
-<b>Avaliar o desempenho do projeto:<b/> Conduzir uma análise pós-implementação para verificar o cumprimento dos objetivos e métricas de sucesso.
+<b>Avaliar o desempenho do projeto:</b> Conduzir uma análise pós-implementação para verificar o cumprimento dos objetivos e métricas de sucesso.
 
 <b>Documentar lições aprendidas:</b> Registrar os principais aprendizados do projeto, ajudando a aprimorar futuros projetos similares.
 
