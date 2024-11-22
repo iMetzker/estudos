@@ -48,5 +48,12 @@ Desenvolver celulares modulares que priorizem a reparabilidade e a personalizaç
 - Regulamentar práticas de design sustentável.</td>
         <td>Média</td>
     </tr>
-    
 </table>
+<br>
+
+## Integrantes do Grupo
+> Arthur A. Santos <br>
+Bruno Henrique Santos <br>
+Ivny X.Metzker <br>
+Maverson S. Santos <br>
+Renato Junio P. Moura
