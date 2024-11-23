@@ -45,7 +45,7 @@ A obsolescência programada nos celulares agrava a geração de lixo eletrônico
     <tr>
         <td>Falta de indústrias parceiras para fornecimento de tecnologias modulares e sustentáveis</td>
         <td>Consumidores encontram poucas opções no mercado de dispositivos projetados para reparabilidade, sustentabilidade e upgrades modulares.</td>
-        <td>- Buscar fabricantes parceiros</td>
+        <td>- Além de investir em Pesquisa e Desenvolvimento para a nossa produção própria de componentes de hardware com suporte a sistemas modulares, estabelecer parcerias com demais fabricantes para aumentar a compatibilidade e escalabilidade e difundir nossas ideias no mercado,</td>
         <td>Alta</td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@ A obsolescência programada nos celulares agrava a geração de lixo eletrônico
         <td>Preocupação com a performace dos celulares modulares em comparação com os convencionais</td>
         <td>Alguns consumidores podem temer que a performance dos dispositivos modulares seja inferior à dos celulares convencionais devido às trocas de componentes</td>
         <td>- Buscar parcerias com fornecedores de componentes de topo de linha, como fabricantes de chips de processadores, memória, câmeras e baterias</td>
-        <td>Alta</td>
+        <td>Média</td>
     </tr>
     <tr>
         <td>Falta de confiança no modelo modular para longos períodos de uso</td>
