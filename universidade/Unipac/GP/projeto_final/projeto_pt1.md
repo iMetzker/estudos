@@ -73,6 +73,6 @@ A obsolescência programada nos celulares agrava o lixo eletrônico, incentivand
 ## Integrantes do Grupo
 > Arthur A. Santos <br>
 Bruno Henrique Santos <br>
-Ivny X.Metzker <br>
+Ivny X. Metzker <br>
 Maverson S. Santos <br>
 Renato Junio P. Moura
