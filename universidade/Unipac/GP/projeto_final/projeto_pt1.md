@@ -1,6 +1,6 @@
 # Upgrades Acessíveis em Dispositivos Móveis
 
-### Cenário: Startup ImbraTech - Tecnologia Sustentável
+### Cenário: Startup ImbraTech - Tecnologia Sustentável e Escalável
 
 A indústria de smartphones adota um modelo baseado na obsolescência programada, com dispositivos projetados para se tornarem obsoletos rapidamente devido à falta de atualizações, degradação de componentes e design não modular. Isso leva ao descarte frequente de aparelhos, gerando lixo eletrônico massivo e barreiras de acessibilidade devido ao alto custo de novos dispositivos.
 <br> <br>
