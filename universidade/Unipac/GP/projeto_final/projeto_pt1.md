@@ -2,14 +2,14 @@
 
 ### Cenário: Startup ImbraTech - Tecnologia Sustentável e Escalável
 
-A indústria de smartphones adota um modelo baseado na obsolescência programada, com dispositivos projetados para se tornarem obsoletos rapidamente devido à falta de atualizações, degradação de componentes e design não modular. Isso leva ao descarte frequente de aparelhos, gerando lixo eletrônico massivo e barreiras de acessibilidade devido ao alto custo de novos dispositivos.
+A indústria de smartphones adota um modelo baseado na obsolescência programada, com dispositivos projetados para se tornarem obsoletos rapidamente devido ao abandono de suporte, degradação prematura da vida útil e design não modular. Isso leva ao descarte frequente de aparelhos, gerando lixo eletrônico massivo e barreiras de acessibilidade devido ao alto custo de novos dispositivos.
 <br> <br>
-A ImbraTech, uma startup de soluções sustentáveis, propõe dispositivos móveis modulares e acessíveis, permitindo a substituição e upgrades de componentes como baterias, câmeras e processadores. Essa abordagem prolonga a vida útil dos aparelhos, reduz o impacto ambiental e promove a inclusão tecnológica.
+A ImbraTech, uma startup de soluções sustentáveis, propõe dispositivos móveis modulares e acessíveis, permitindo a substituição e upgrades de componentes como baterias, câmeras, dispositivos de armazenamento e processadores. Essa abordagem prolonga a vida útil dos aparelhos, reduz o impacto ambiental e promove a inclusão tecnológica.
 
 
 ### Problema Macro Identificado: Obsolescência Programada e Geração de Lixo Eletrônico
 
-A obsolescência programada nos celulares agrava o lixo eletrônico, incentivando o descarte de dispositivos que poderiam ser reparados. Além disso, o design fechado e a falta de componentes modulares frustram usuários, impedindo reparos e upgrades simples, como trocar baterias ou atualizar câmeras e processadores. Essa limitação reforça o ciclo de consumo descartável, dificultando a personalização e a extensão da vida útil dos aparelhos.
+A obsolescência programada nos celulares agrava a geração de lixo eletrônico através de estratégias de design que promovem o constante descarte e compra de novos dispositivos que poderiam ser reparados. Além disso, muitos usuários enfrentam frustrações com a impossibilidade de realizar upgrades ou substituições simples no hardware de seus dispositivos por conta própria devido ao design fechado, como trocar baterias ou melhorar câmeras e processadores, o que acarreta em uma dependência de serviços de profssionais de assistência técnica especializada, o que frequentemente sai caro e demorado. Essa limitação reforça o ciclo de consumo descartável, dificultando a personalização e a extensão da vida útil dos aparelhos.
 
 
 ### Personas
