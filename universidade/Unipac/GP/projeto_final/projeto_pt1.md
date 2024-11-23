@@ -29,7 +29,7 @@ A obsolescência programada nos celulares agrava o lixo eletrônico, incentivand
         <th>Prioridade</th>
     </tr>
     <tr>
-        <td>Obsolescência programada encurtando a vida útil dos celulares.</td>
+        <td>Obsolescência programada encurtando a vida útil dos celulares</td>
         <td>Usuários são forçados a substituir celulares por falhas pequenas em vez de repará-los, gerando frustração e custos</td>
         <td>- Criar celulares modulares com componentes substituíveis. <br> - Incentivar a produção de peças de reposição acessíveis
         </td>
@@ -37,7 +37,7 @@ A obsolescência programada nos celulares agrava o lixo eletrônico, incentivand
         </td>
     </tr>
     <tr>
-        <td>Crescimento do lixo eletrônico e seus impactos ambientais.</td>
+        <td>Crescimento do lixo eletrônico e seus impactos ambientais</td>
         <td>O descarte inadequado dos celulares contribui para a poluição do meio ambiente e a exploração excessiva de recursos</td>
         <td>- Advertir e criar campanhas de conscientização ambiental no marketing dos nossos dispositivos</td>
         <td>Alta</td>
@@ -50,7 +50,7 @@ A obsolescência programada nos celulares agrava o lixo eletrônico, incentivand
     </tr>
     <tr>
         <td>Preocupações com a durabilidade e qualidade dos componentes modulares</td>
-        <td>Os consumidores podem ter receio de que os componentes modulares não sejam tão duráveis ou de alta qualidade quanto os dispositivos tradicionais.</td>
+        <td>Os consumidores podem ter receio de que os componentes modulares não sejam tão duráveis ou de alta qualidade quanto os dispositivos tradicionais</td>
         <td>- Garantia de a alta qualidade e durabilidade dos componentes modulares com certificações de qualidade rigorosas <br> - Oferecer garantias de longo prazo para aumentar a confiança do consumidor</td>
         <td>Média</td>
     </tr>
