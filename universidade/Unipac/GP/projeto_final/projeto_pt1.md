@@ -1,14 +1,16 @@
 # Upgrades Acessíveis em Dispositivos Móveis
 
-#### Cenário: Impacto Ambiental da Obsolescência Programada em Celulares
-O mercado global de smartphones é marcado por ciclos curtos de atualização e substituição, impulsionados pela obsolescência programada. Os celulares são frequentemente projetados para serem substituídos em vez de reparados, com componentes difíceis de trocar ou reparar, como baterias, câmeras e processadores. Essa prática, incentivada por grandes empresas, encurta a vida útil dos dispositivos e gera lucros crescentes para os fabricantes. No entanto, essa abordagem tem um custo ambiental significativo: o aumento do lixo eletrônico. Esse tipo de resíduo é uma das maiores e mais rapidamente crescentes fontes de lixo tóxico, que, quando não descartado de forma adequada, contamina o meio ambiente e representa uma ameaça crescente à saúde pública e à sustentabilidade global.
+### Cenário: Startup ImbraTech - Tecnologia Sustentável
 
-## Problema Macro Identificado
+A indústria de smartphones adota um modelo baseado na obsolescência programada, com dispositivos projetados para se tornarem obsoletos rapidamente devido à falta de atualizações, degradação de componentes e design não modular. Isso leva ao descarte frequente de aparelhos, gerando lixo eletrônico massivo e barreiras de acessibilidade devido ao alto custo de novos dispositivos.
+<br> <br>
+A ImbraTech, uma startup de soluções sustentáveis, propõe dispositivos móveis modulares e acessíveis, permitindo a substituição e upgrades de componentes como baterias, câmeras e processadores. Essa abordagem prolonga a vida útil dos aparelhos, reduz o impacto ambiental e promove a inclusão tecnológica.
 
-A obsolescência programada nos celulares, promovida como estratégia de mercado, agrava a crise do lixo eletrônico. Os dispositivos são descartados em grande quantidade, mesmo quando pequenas falhas poderiam ser resolvidas por meio de reparos. Esse modelo contribui para o desperdício de recursos naturais, o aumento da poluição ambiental e a insatisfação de consumidores mais conscientes sobre sustentabilidade.
 
-## Solução Proposta:
-Desenvolver celulares modulares que priorizem a reparabilidade e a personalização. Com componentes intercambiáveis, como baterias, câmeras e processadores, os usuários poderiam substituir ou atualizar apenas as partes necessárias, estendendo significativamente a vida útil do dispositivo. Essa abordagem atende ao interesse crescente por produtos sustentáveis e adaptáveis, ao mesmo tempo que oferece aos consumidores maior controle sobre seus dispositivos. Além disso, reduziria a geração de lixo eletrônico, alinhando-se a práticas de economia circular e incentivando uma relação mais responsável entre fabricantes, consumidores e o meio ambiente.
+### Problema Macro Identificado: Obsolescência Programada e Geração de Lixo Eletrônico
+
+A obsolescência programada nos celulares agrava o lixo eletrônico, incentivando o descarte de dispositivos que poderiam ser reparados. Além disso, o design fechado e a falta de componentes modulares frustram usuários, impedindo reparos e upgrades simples, como trocar baterias ou atualizar câmeras e processadores. Essa limitação reforça o ciclo de consumo descartável, dificultando a personalização e a extensão da vida útil dos aparelhos.
+
 
 ### Personas
 
@@ -28,25 +30,42 @@ Desenvolver celulares modulares que priorizem a reparabilidade e a personalizaç
     </tr>
     <tr>
         <td>Obsolescência programada encurtando a vida útil dos celulares.</td>
-        <td>Usuários são forçados a substituir celulares por falhas pequenas em vez de repará-los, gerando frustração e custos.</td>
-        <td>- Criar celulares modulares com componentes substituíveis. <br> - Incentivar a produção de peças de reposição acessíveis.
+        <td>Usuários são forçados a substituir celulares por falhas pequenas em vez de repará-los, gerando frustração e custos</td>
+        <td>- Criar celulares modulares com componentes substituíveis. <br> - Incentivar a produção de peças de reposição acessíveis
         </td>
         <td> Alta
         </td>
     </tr>
     <tr>
         <td>Crescimento do lixo eletrônico e seus impactos ambientais.</td>
-        <td>O descarte inadequado dos celulares contribui para a poluição do meio ambiente e a exploração excessiva de recursos.</td>
-        <td>- Implantar programas de reciclagem obrigatória para fabricantes. <br>
-- Criar campanhas de conscientização ambiental.</td>
+        <td>O descarte inadequado dos celulares contribui para a poluição do meio ambiente e a exploração excessiva de recursos</td>
+        <td>- Advertir e criar campanhas de conscientização ambiental no marketing dos nossos dispositivos</td>
         <td>Alta</td>
     </tr>
     <tr>
-        <td>Falta de incentivo para práticas sustentáveis no setor.</td>
-        <td>Consumidores encontram poucas opções no mercado de dispositivos projetados para durabilidade e sustentabilidade.</td>
-        <td>- Oferecer benefícios fiscais a fabricantes que desenvolvam produtos ecológicos.<br>
-- Regulamentar práticas de design sustentável.</td>
+        <td>Falta de indústrias parceiras para fornecimento de tecnologias modulares e sustentáveis</td>
+        <td>Consumidores encontram poucas opções no mercado de dispositivos projetados para reparabilidade, sustentabilidade e upgrades modulares.</td>
+        <td>- Buscar fabricantes parceiros</td>
+        <td>Alta</td>
+    </tr>
+    <tr>
+        <td>Preocupações com a durabilidade e qualidade dos componentes modulares</td>
+        <td>Os consumidores podem ter receio de que os componentes modulares não sejam tão duráveis ou de alta qualidade quanto os dispositivos tradicionais.</td>
+        <td>- Garantia de a alta qualidade e durabilidade dos componentes modulares com certificações de qualidade rigorosas <br> - Oferecer garantias de longo prazo para aumentar a confiança do consumidor</td>
         <td>Média</td>
+    </tr>
+    <tr>
+        <td>Preocupação com a performace dos celulares modulares em comparação com os convencionais</td>
+        <td>Alguns consumidores podem temer que a performance dos dispositivos modulares seja inferior à dos celulares convencionais devido às trocas de componentes</td>
+        <td>- Buscar parcerias com fornecedores de componentes de topo de linha, como fabricantes de chips de processadores, memória, câmeras e baterias</td>
+        <td>Alta</td>
+    </tr>
+    <tr>
+        <td>Falta de confiança no modelo modular para longos períodos de uso</td>
+        <td>Consumidores podem desconfiar de um dispositivo modular como uma solução duradoura</td>
+        <td>- Criar garantias estendidas e planos de manutenção para dispositivos modulares <br>
+- Oferecer suporte contínuo e peças de reposição</td>
+        <td>Baixa</td>
     </tr>
 </table>
 <br>
